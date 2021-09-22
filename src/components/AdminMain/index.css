@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+.admin-main-bg-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 25px;
+}
+
+.search-bar {
+  padding: 10px;
+  outline: none;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+.table-container {
+  overflow: auto;
+}
+.users-data-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-headings-row {
+  text-align: left;
+  border-bottom: 1px solid lightgray;
+}
+.table-heading {
+  padding: 15px;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.delete-btn-pagination-container {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) {
+  .delete-btn-pagination-container {
+    flex-direction: row;
+  }
+}
+.save-btn {
+  background-color: #1111e6;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 15px;
+  outline: none;
+  border-width: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+.edit-input-el {
+  padding: 10px;
+  background-color: #fff8dc;
+  border: 1px solid #c7bb8c;
+  border-radius: 15px;
+  outline: none;
+}
+
+.delete-btn {
+  background-color: #eb020a;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 15px;
+  outline: none;
+  border-width: 0;
+  padding: 10px;
+  width: 150px;
+  order: 1;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .delete-btn {
+    order: 0;
+  }
+}
